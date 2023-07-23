@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Translation App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #translated_text {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="textToTranslate" class="form-label">Text to be translated</label>
+                    <textarea class="form-control" id="textToTranslate" rows="2"></textarea>
+                </div>
+            
+                <div class="text-center mb-3">
+                    <button onclick="translateToFrench()" class="btn btn-secondary">Translate to French</button>        
+                    <button onclick="translateToEnglish()" class="btn btn-secondary">Translate to English</button>        
+                </div>
+            
+                <div id="translated_text" class="mb-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./static/mywebscript.js"></script>
+</body>
+</html>
